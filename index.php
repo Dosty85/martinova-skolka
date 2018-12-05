@@ -7,7 +7,7 @@ $dates_output = [];
 
 foreach ($dates_input as $date) {
     // Zde převeď $date z formátu ISO-8601 do formátu ANSI (tedy jako SQL známé: Y-m-d H:i:s)
-    //$date = ...
+    $date = date("Y-m-d H:i:s",strtotime($date));
 
     //Přidej do pole $date_output
     $dates_output[] = $date;
